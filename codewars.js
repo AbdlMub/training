@@ -34,4 +34,27 @@ function otherAngle(a, b) {
     return 180-(a+b);
   }
 
+// Century from Year 
+function century(year) {
+  let result = 0;
+  
+  for (let i = 0; i < year; i++) {
+    if (i % 100 === 0) {
+      result++;
+    }
+  }
+  return result;
+}
+
+// Is n divisble by x and y 
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0
+}
+
+// Cats and Shelves
+function solution(start, finish) {
+    var diff = finish - start
+    return Math.floor(diff / 3) + (diff % 3)
+  }
+
   
